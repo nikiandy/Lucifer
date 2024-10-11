@@ -1,0 +1,152 @@
+body {
+    background-color: darkgrey;
+}
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: #880808;
+    font-family: sans-serif;
+}
+em {
+    color: firebrick;
+    font-family: monospace;
+}
+.flex_style {
+	display: flex;
+}
+.flex_style section 
+{
+	flex: 1;	
+	border: 0.3rem;
+	padding: 1rem;
+}
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0px;
+}
+p.left {
+	text-align: left;
+}
+em2 {
+    color: gold;
+    font-weight: bold;
+}
+/* nav bar code */
+nav{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+nav ul {
+    display: flex;
+    gap: 1rem;
+    
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav ul li {
+    flex: 1;
+}
+nav a:link, nav a:visited {
+    display: block;
+    font-weight: bold;
+    color: #DAA520;
+    background-color: #28282B;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border:4px solid #880808;
+}
+nav a:hover {
+    color: black;
+    font-weight: bolder;
+	background-color: lightpink;
+}
+nav a.current {
+    background-color: burlywood;
+    color: black;
+}
+
+/* Subnav bar */
+section.subnav {
+	padding: 4;
+	border: none;
+	margin: 0;
+}
+.subnav ul {
+    float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+    width: 200px;
+}
+.subnav a {
+	display: block;
+    font-weight: bold;
+	color: #DAA520;
+	background-color: #28282B;
+	text-decoration: none;
+	padding-top: 0.2em;
+    margin: 0.3rem; 
+	text-align: center;
+	border: 3px solid #880808;
+    letter-spacing: 0.5px;
+}
+.subnav a:hover {
+    color: black;
+    font-weight: bolder;
+	background-color: lightpink;
+}
+.subnav a.current {
+    background-color: burlywood;
+    color: black;
+}
+/* Profile style characters */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.column {
+    float: left;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #880808;
+}
+.container {
+    padding: 0 16px;
+    background-color: white;
+}
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+.button:hover {
+    background-color: #555;
+}
